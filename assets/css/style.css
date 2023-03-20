@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+/*---Primary---*/
+
+--softBlue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+/*---Neutral---*/
+
+--veryDarkBlueMain: hsl(217, 54%, 11%); /*(main BG)*/
+--veryDarkBlueCard: hsl(216, 50%, 16%); /*(card BG)*/
+--veryDarkBlueLine: hsl(215, 32%, 27%); /*(line)*/
+--white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--veryDarkBlueMain);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section {
+    background-color: var(--veryDarkBlueCard);
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 340px;
+}
+
+.nft-image, .nft-title, .nft-description, .price-and-time, hr {
+    margin-bottom: 1.3rem;
+}
+
+.nft-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.nft-title h1 {
+    color: var(--white);
+    font-size: 17pt;
+    font-weight: 600;
+}
+
+.nft-description p {
+    color: var(--softBlue);
+    font-size: 13pt;
+    font-weight: 300;
+}
+
+.price-and-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-and-time .nft-price, .nft-timeLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 400;
+}
+
+.price-and-time .nft-price {
+    color: var(--cyan);
+}
+
+.price-and-time .nft-timeLeft {
+    color: var(--softBlue);
+}
+
+hr {
+    border: 0.1rem solid var(--veryDarkBlueLine);
+}
+
+.nft-creator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nft-creator img {
+    max-width: 2.2rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.nft-creator p, span {
+    font-weight: 300;
+    font-size: 11pt;
+}
+
+.nft-creator p {
+    color: var(--softBlue);
+
+}
+
+.nft-creator span {
+    color: var(--white);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 10pt;
+    color: var(--softBlue);
+}
+
+a {
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--cyan);
+}
