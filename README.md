@@ -33,8 +33,8 @@ Mobile<br>
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/nft-preview-card-adepAspr1W)
+- Live Site URL: [Live site](https://mathiaxs.github.io/nftPreviewCard/)
 
 ## My process
 
